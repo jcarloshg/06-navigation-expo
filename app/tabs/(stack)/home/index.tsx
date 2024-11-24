@@ -14,21 +14,21 @@ const HomeScreen: React.FC = () => {
             title="Products"
             color="primary"
             onPress={() => {
-              router.push("/products");
+              router.push("/tabs/(stack)/products");
             }}
           />
           <CustomButton
             title="Profile"
             color="secondary"
             onPress={() => {
-              router.push("/profile");
+              router.push("/tabs/(stack)/profile");
             }}
           />
           <CustomButton
             title="Settings"
             color="tertiary"
             onPress={() => {
-              router.push("/settings");
+              router.push("/tabs/(stack)/settings");
             }}
           />
         </View>

@@ -1,10 +1,27 @@
 import React from "react";
 import { Tabs } from "expo-router";
-import { FontAwesome, Ionicons } from "@expo/vector-icons/";
+import { Ionicons } from "@expo/vector-icons/";
 
 const Home = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "green" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "indigo",
+        headerShown: false,
+        // tabBarStyle: {
+        //   backgroundColor: "black",
+        // },
+      }}
+    >
+      <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: "Stack",
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={28} name="person-add-outline" color={color} />
+          ),
+        }}
+      />
       <Tabs.Screen
         name="home/index"
         options={{

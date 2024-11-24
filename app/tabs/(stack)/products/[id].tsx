@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { useLocalSearchParams } from "expo-router";
-import { products } from "../../../store/products.store";
+import { products } from "@/store/products.store";
+
 
 const Producto = () => {
   const { id } = useLocalSearchParams();

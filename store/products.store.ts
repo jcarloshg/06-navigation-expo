@@ -10,7 +10,7 @@ export const products = [
         id: '2',
         title: 'Reloj Inteligente',
         description:
-            'Mantente conectado y sigue tu estado físico con este elegante y moderno reloj inteligente. Equipado con funciones como monitoreo de frecuencia cardíaca, GPS y más.',
+            'Mantente conectado y sigue tu estado físico con este elegante y moderno reloj inteligente. Equipado con funciones como monitored de frecuencia cardíaca, GPS y más.',
         price: 149.99,
     },
     {

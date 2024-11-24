@@ -15,7 +15,7 @@ const Products = () => {
             <Text className="text-base">{item.description}</Text>
             <View className="flex flex-row justify-between">
               <Text className="font-work-black">{item.price}</Text>
-              <Link href={`/(stack)/products/${item.id}`}>
+              <Link href={`/tabs/(stack)/products/${item.id}`}>
                 <Text className="text-blue-500">Ver detalles </Text>
               </Link>
             </View>
