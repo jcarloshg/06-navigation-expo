@@ -1,7 +1,7 @@
 import { products } from "@/store/products.store";
 import { Link } from "expo-router";
 import React from "react";
-import { View, Text, SafeAreaView, FlatList } from "react-native";
+import { View, Text, FlatList } from "react-native";
 
 const Products = () => {
   return (
@@ -15,7 +15,7 @@ const Products = () => {
             <Text className="text-base">{item.description}</Text>
             <View className="flex flex-row justify-between">
               <Text className="font-work-black">{item.price}</Text>
-              <Link href={`/tabs/(stack)/products/${item.id}`}>
+              <Link href={`/products/${item.id}`}>
                 <Text className="text-blue-500">Ver detalles </Text>
               </Link>
             </View>

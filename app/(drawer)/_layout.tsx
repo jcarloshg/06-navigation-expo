@@ -1,7 +1,6 @@
 import React from "react";
 import { Drawer } from "expo-router/drawer";
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View } from "react-native";
 import CustomDrawer from "@/components/shared/CustomDrawer";
 
 const DrawerLayout = () => {
@@ -12,6 +11,7 @@ const DrawerLayout = () => {
         overlayColor: "rgba(0, 0, 0, 0.5)",
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
+        headerShown: false,
         sceneStyle: {
           backgroundColor: "white",
         },
@@ -34,6 +34,16 @@ const DrawerLayout = () => {
           title: "Calendario",
           drawerIcon: ({ color, size }) => (
             <Ionicons size={size} color={color} name="calendar-outline" />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: "Options",
+          title: "Options",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons size={size} color={color} name="options-outline" />
           ),
         }}
       />
